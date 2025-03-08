@@ -9,8 +9,6 @@ class Schedule:
         labels = {n: str(n) + '; duration = ' + str(self.graph.nodes[n]['weight']) for n in self.graph.nodes}
         colors = [self.graph.nodes[n]['color'] for n in self.graph.nodes]
         nx.draw(self.graph, with_labels=True, labels=labels, node_color=colors)
-
-        #show the graph
         plt.show()
 
 def main():
